@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="285.0" prefWidth="351.0" style="-fx-background-color: #b208b2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxmlexample.Last_Scene_Controller">
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="241.0" layoutX="55.0" layoutY="23.0" pickOnBounds="true">
+         <image>
+            <Image url="@LastScene_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="112.0" layoutX="28.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LastScene_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="112.0" layoutX="212.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LastScene_1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="55.0" layoutY="99.0" prefHeight="42.0" prefWidth="57.0" text="WIN" textFill="#d8ef0a">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="233.0" layoutY="99.0" prefHeight="42.0" prefWidth="70.0" text="LOSE" textFill="#d8ef0a">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="win_label" layoutX="14.0" layoutY="131.0" text="PLAYER1" textFill="#fcfbfb">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="lose_label" layoutX="198.0" layoutY="131.0" text="PLAYER2" textFill="#fcfbfb">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="LastScene_Menu_Button" layoutX="28.0" layoutY="216.0" mnemonicParsing="false" onAction="#LastScene_Menu_Click" opacity="0.0" prefHeight="48.0" prefWidth="112.0" text="Button" />
+      <Button fx:id="LastScene_Replay_Button" layoutX="212.0" layoutY="216.0" mnemonicParsing="false" onAction="#LastScene_ReplayClick" opacity="0.0" prefHeight="48.0" prefWidth="112.0" text="Button" />
+   </children>
+</AnchorPane>

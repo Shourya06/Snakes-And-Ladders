@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="374.0" style="-fx-background-color: #8c0b2c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxmlexample.HelloController">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="374.0" layoutX="15.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BoardUI.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="BoardGrid" disable="true" layoutX="18.0" layoutY="62.0" prefHeight="485.0" prefWidth="344.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="Green_Token_img" fitHeight="31.0" fitWidth="14.0" layoutX="53.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Green_Token.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Blue_Token_img" fitHeight="23.0" fitWidth="14.0" layoutX="29.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Blue_Token.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="157.0" layoutY="604.0" prefHeight="58.0" prefWidth="58.0">
+         <children>
+            <ImageView fx:id="dice_img" fitHeight="58.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Dice_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="dice_button" mnemonicParsing="false" onAction="#Dice_Click" opacity="0.0" prefHeight="58.0" prefWidth="58.0" text="Dice" />
+         </children>
+      </StackPane>
+      <ImageView fx:id="Player1_img" fitHeight="58.0" fitWidth="112.0" layoutX="43.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@player1_img.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player2_img" fitHeight="58.0" fitWidth="112.0" layoutX="215.0" layoutY="604.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@player2_img.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="52.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Startscene_2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="MainBoard_Back" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#MainBoard_Back_Click" opacity="0.0" prefHeight="37.0" prefWidth="42.0" text="Button" />
+      <ImageView fitHeight="44.0" fitWidth="32.0" layoutX="170.0" layoutY="561.0" pickOnBounds="true">
+         <image>
+            <Image url="@Arrow_Gif.gif" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
